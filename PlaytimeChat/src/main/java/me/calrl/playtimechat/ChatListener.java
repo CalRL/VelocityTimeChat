@@ -5,6 +5,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.plugin.messaging.PluginMessageListener;
@@ -22,16 +23,6 @@ public class ChatListener implements Listener, PluginMessageListener {
         this.plugin = plugin;
         this.logger = plugin.getLogger();
         this.debugMode = plugin.getDebugMode();
-    }
-
-    @EventHandler
-    private void onPlayerChat(AsyncChatEvent event) {
-        Player player = event.getPlayer();
-        if(!player.hasPermission("chat.allow") && !player.isOp()) {
-            event.setCancelled(true);
-            player.sendMessage("You cannot chat yet!");
-            player.sendMessage("You need to play for a total of 15 minutes before chatting!");
-        }
     }
 
     @Override

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PlaytimeChat.main.iml" filepath="$PROJECT_DIR$/.idea/modules/PlaytimeChat.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/VelocityOnlineTime.main.iml" filepath="$PROJECT_DIR$/.idea/modules/VelocityOnlineTime.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/VelocityTimeChat.iml" filepath="$PROJECT_DIR$/.idea/VelocityTimeChat.iml" />
+    </modules>
+  </component>
+</project>
